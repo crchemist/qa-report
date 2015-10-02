@@ -1,6 +1,7 @@
 {
   "name": "qa-report",
   "version": "0.1",
+  "devtools_page": "devtools.html",
   "browser_action": {
       "default_title": "Show the popup",
       "default_popup": "popup.html",
@@ -26,6 +27,11 @@
     "scripts": ["qa_report.js", "background.js"],
     "persistent": false
   },
-  "manifest_version": 2
+  "manifest_version": 2,
+  "permissions": [
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ]
 }
 
