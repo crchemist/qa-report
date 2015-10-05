@@ -14,12 +14,13 @@
   "icons": {
     "16": "icon16.png",
     "48": "icon48.png",
-    "128": "icon128.png"
+    "128": "icon128.png",
   },
  "content_scripts": [
     {
       "matches": ["*://*/*"],
-      "js": ["qa_report.js", "content.js"],
+      "js": ["qa_report.js", "content.js", "bootstrap.js"],
+      "css": ["bootstrap.css"],
       "run_at": "document_end"
     }
   ],
