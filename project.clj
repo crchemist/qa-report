@@ -9,13 +9,12 @@
   :source-paths ["src"]
   :profiles {:dev {:plugins [[com.cemerick/austin "0.1.3"]
                              [lein-cljsbuild "1.1.0"]
-                             [lein-git-deps "0.0.1-SNAPSHOT"]
                              [lein-chromebuild "0.2.1"]]
 
                    :cljsbuild {:builds {:main
                                         {:source-paths ["src"]
                                          :compiler {:output-to "target/unpacked/qa_report.js"
                                                     :output-dir "target/js"
-                                                    :optimizations :whitespace
+                                                    :optimizations :simple
                                                     :pretty-print true}}}}
                    }}) 
