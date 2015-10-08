@@ -19,7 +19,7 @@
  "content_scripts": [
     {
       "matches": ["*://*/*"],
-      "js": ["qa_report.js", "content.js", "bootstrap.js"],
+      "js": ["qa_report.js", "content.js", "jquery.js", "bootstrap.js"],
       "css": ["bootstrap.css"],
       "run_at": "document_end"
     }
